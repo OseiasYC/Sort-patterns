@@ -58,9 +58,9 @@ public class Client {
        //(tempoFinal - tempoInicial) + " milisegundos.");
         
         
-        for (int i = 0; i < array.length; i++) {
-			System.out.println(array[i]);
-		}
+//        for (int i = 0; i < array.length; i++) {
+//			System.out.println(array[i]);
+//		}
 
        
        
