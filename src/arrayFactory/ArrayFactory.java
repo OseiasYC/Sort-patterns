@@ -1,4 +1,4 @@
-package arrayfactory;
+package arrayFactory;
 
 public abstract class ArrayFactory {
     public Array createArray(int size) {

@@ -1,4 +1,4 @@
-package sortcommand;
+package sortCommand;
 
 public class SelectionSortCommand implements Command {
 

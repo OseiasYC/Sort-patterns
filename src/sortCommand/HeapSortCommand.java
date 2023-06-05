@@ -1,4 +1,4 @@
-package sortcommand;
+package sortCommand;
 
 import java.lang.Comparable;
 

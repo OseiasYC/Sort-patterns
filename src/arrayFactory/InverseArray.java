@@ -1,4 +1,4 @@
-package arrayfactory;
+package arrayFactory;
 
 public class InverseArray implements Array {
 

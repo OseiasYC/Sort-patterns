@@ -1,4 +1,4 @@
-package metrictemplate;
+package metricTemplate;
 
 public class MetricTemplate extends Metrics {
 

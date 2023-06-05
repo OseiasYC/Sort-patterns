@@ -1,9 +1,9 @@
-package sortcommand;
+package sortCommand;
 
 import java.lang.reflect.Array;
 
-import metrictemplate.MetricTemplate;
-import metrictemplate.Metrics;
+import metricTemplate.MetricTemplate;
+import metricTemplate.Metrics;
 
 public class SortInvoker {
 

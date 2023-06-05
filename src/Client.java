@@ -1,7 +1,7 @@
 
-import arrayfactory.*;
-import metrictemplate.*;
-import sortcommand.*;
+import arrayFactory.*;
+import metricTemplate.*;
+import sortCommand.*;
 
 public class Client {
     public static void main(String[] args) {

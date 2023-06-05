@@ -1,4 +1,4 @@
-package arrayfactory;
+package arrayFactory;
 
 public interface Array {
     // public Integer[] array;
