@@ -1,41 +1,41 @@
-package sortCommand;
+package sortcommand;
 
 public class QuickSortCommand implements Command {
 
-    public Integer[] array;
-    int inicio;
-    int fim;
+	public Integer[] array;
+	Integer inicio;
+	Integer fim;
 
-    public  QuickSortCommand(Integer[] array, int inicio, int fim){
-        this.array = array;
-        this.inicio = inicio;
-        this.fim = fim;
-    }
+	public QuickSortCommand(Integer[] array, Integer inicio, Integer fim) {
+		this.array = array;
+		this.inicio = inicio;
+		this.fim = fim;
+	}
 
-    public Integer[] execute(){
-        Integer[] array = this.array;
-       quickSort(array, inicio, fim);
-        return array;
-    }
+	public Integer[] execute() {
+		Integer[] array = this.array;
+		quickSort(array, inicio, fim);
+		return array;
+	}
 
-    public void quickSort(Integer[] array, int inicio, int fim) {
+	public void quickSort(Integer[] array, Integer inicio, Integer fim) {
 		if (inicio < fim) {
-			int posicaoPivo = separar(array, inicio, fim);
+			Integer posicaoPivo = separar(array, inicio, fim);
 			quickSort(array, inicio, posicaoPivo - 1);
 			quickSort(array, posicaoPivo + 1, fim);
 		}
 	}
 
-    private int separar(Integer[] array, int inicio, int fim) {
-		int pivo = array[inicio];
-		int i = inicio + 1, f = fim;
+	private Integer separar(Integer[] array, Integer inicio, Integer fim) {
+		Integer pivo = array[inicio];
+		Integer i = inicio + 1, f = fim;
 		while (i <= f) {
 			if (array[i] <= pivo)
 				i++;
 			else if (pivo < array[f])
 				f--;
 			else {
-				int troca = array[i];
+				Integer troca = array[i];
 				array[i] = array[f];
 				array[f] = troca;
 				i++;
@@ -46,5 +46,5 @@ public class QuickSortCommand implements Command {
 		array[f] = pivo;
 		return f;
 	}
-    
+
 }

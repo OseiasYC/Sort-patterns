@@ -1,23 +1,22 @@
-package sortCommand;
+package sortcommand;
 
 import java.lang.Comparable;
 
-public class HeapSortCommand implements Command{
-    
-	
-	public Integer[] array;
-	
-    public  HeapSortCommand(Integer[] array){
-		this.array = array;
-    }
-	
-    public Integer[] execute(){
-		Integer[] array = this.array;
-        heapSort(array);
-        return array;
-    }
+public class HeapSortCommand implements Command {
 
-    public void heapSort(Comparable[] a) {
+	public Integer[] array;
+
+	public HeapSortCommand(Integer[] array) {
+		this.array = array;
+	}
+
+	public Integer[] execute() {
+		Integer[] array = this.array;
+		heapSort(array);
+		return array;
+	}
+
+	public void heapSort(Comparable[] a) {
 		for (int i = a.length / 2; i >= 0; i--) /* buildHeap */
 			percDown(a, i, a.length);
 		for (int i = a.length - 1; i > 0; i--) {
@@ -26,7 +25,7 @@ public class HeapSortCommand implements Command{
 		}
 	}
 
-    private void percDown(Comparable[] a, int i, int n) {
+	private void percDown(Comparable[] a, int i, int n) {
 		int child;
 		Comparable tmp;
 
@@ -42,11 +41,11 @@ public class HeapSortCommand implements Command{
 		a[i] = tmp;
 	}
 
-    private int leftChild(int i) {
+	private int leftChild(int i) {
 		return 2 * i + 1;
 	}
 
-    private void swapReferences(Object[] a, int index1, int index2) {
+	private void swapReferences(Object[] a, int index1, int index2) {
 		Object tmp = a[index1];
 		a[index1] = a[index2];
 		a[index2] = tmp;

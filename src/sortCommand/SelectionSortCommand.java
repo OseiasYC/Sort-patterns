@@ -1,17 +1,17 @@
-package sortCommand;
+package sortcommand;
 
 public class SelectionSortCommand implements Command {
 
-    public Integer[] array;
+	public Integer[] array;
 
-    public SelectionSortCommand(Integer[] array){
-        this.array = array;
-    }
+	public SelectionSortCommand(Integer[] array) {
+		this.array = array;
+	}
 
-    public Integer[] execute(){
-        Integer[] array = this.array;
+	public Integer[] execute() {
+		Integer[] array = this.array;
 
-        for (int fixo = 0; fixo < array.length - 1; fixo++) {
+		for (int fixo = 0; fixo < array.length - 1; fixo++) {
 			int menor = fixo;
 
 			for (int i = menor + 1; i < array.length; i++) {
@@ -25,7 +25,7 @@ public class SelectionSortCommand implements Command {
 				array[menor] = t;
 			}
 		}
-        
-        return array;
-    }
+
+		return array;
+	}
 }
