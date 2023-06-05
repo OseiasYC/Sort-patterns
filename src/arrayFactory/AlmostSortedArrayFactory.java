@@ -1,9 +1,9 @@
-package arrayFactory;
+package arrayfactory;
 
-public class AlmostSortedArrayFactory extends ArrayFactory{
-    
+public class AlmostSortedArrayFactory extends ArrayFactory {
+
     @Override
-    public Array getArray(int size){
+    public Array getArray(int size) {
         return new AlmostSortedArray(size);
     }
 

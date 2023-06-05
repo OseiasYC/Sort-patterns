@@ -1,4 +1,4 @@
-package arrayFactory;
+package arrayfactory;
 
 public class AlmostSortedArray implements Array {
 

@@ -1,10 +1,10 @@
-package arrayFactory;
+package arrayfactory;
 
-public class InverseArrayFactory extends ArrayFactory{
-   
+public class InverseArrayFactory extends ArrayFactory {
+
     @Override
     public Array getArray(int size) {
         return new InverseArray(size);
     }
-    
+
 }

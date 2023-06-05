@@ -1,12 +1,7 @@
 
-import arrayFactory.Array;
-import arrayFactory.ArrayFactory;
-import arrayFactory.InverseArrayFactory;
-import arrayFactory.RandomArrayFactory;
-import metricTemplate.MetricTemplate;
-import metricTemplate.Metrics;
-import sortCommand.InsertionSortCommand;
-import sortCommand.SortInvoker;
+import arrayfactory.*;
+import metrictemplate.*;
+import sortcommand.*;
 
 public class Client {
     public static void main(String[] args) {
@@ -48,8 +43,9 @@ public class Client {
 
         // tempoInicial = System.currentTimeMillis();
 
-        invoker.setCommand(new InsertionSortCommand(randomArray10.returnArray()));
+        invoker.setCommand(new MergeSortCommand(inverseArray100.returnArray(), 0, 100));
         Integer[] array = invoker.executeCommand(metrics);
+        // Integer[] array = inverseArray10.returnArray();
 
         // metric.ShowMetrics();
 
@@ -59,9 +55,9 @@ public class Client {
         // +
         // (tempoFinal - tempoInicial) + " milisegundos.");
 
-        // for (int i = 0; i < array.length; i++) {
-        // System.out.println(array[i]);
-        // }
+        for (int i = 0; i < array.length; i++) {
+        System.out.println(array[i]);
+        }
 
     }
 

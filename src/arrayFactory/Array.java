@@ -1,8 +1,9 @@
-package arrayFactory;
+package arrayfactory;
 
 public interface Array {
-    //public Integer[] array;
-    
+    // public Integer[] array;
+
     Array getArray(int size);
+
     Integer[] returnArray();
 }
