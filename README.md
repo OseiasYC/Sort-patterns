@@ -12,6 +12,8 @@ Durante o processo de desenvolvimento, nas tentativas de aplicar na prática os 
 Portanto, nos parece evidente que ao ampliar o repertório de padrões e aplicá-los em diferentes contextos a nossa perspectiva de possibilidades se ampliará. Até que o desenvolvedor não identifique possíveis melhorias a serem feitas, este ciclo de refatoração se repete. 
 Aqui o escopo foi reduzido a aplicação de 3 padrões de projetos específicos: **Template Method, Factory Method, Command**.
 
+[Sort Patterns - Vídeo Apresentação](https://drive.google.com/file/d/18jhY-xU_njGD5S-l7-B-X61PQ92zPVl7/view?usp=sharing)
+
 
 ### Template Method:
 
